@@ -5,6 +5,14 @@ public class ClickBait {
 
 	public static void main(String args[]) {
 
+		//declaring main variables
+		String p1 = null;
+		String p2 = null;
+		String action = null;
+		String bnews = null;
+		Random rand = new Random();
+
+		//People
 		String per1 = "Obama";
 		String per2 = "Donald Trump";
 		String per3 = "Bernie Sanders";
@@ -15,21 +23,8 @@ public class ClickBait {
 		String per8 = "Larry Page";
 		String per9 = "Edward Snowden";
 
-		String act1 = " wants to sue ";
-		String act2 = " is going to talk to ";
-		String act3 = " is mad at ";
-		String act4 = " is angry at ";
-		String act5 = " wants to hire ";
-
-		String p1 = null;
-		String p2 = null;
-		String action = null;
-
-		Random rand = new Random();
+		//picks first person
 		int pe1 = rand.nextInt(9);
-		int pe2 = rand.nextInt(9);
-		int act = rand.nextInt(5);
-
 		switch (pe1) {
 		case 0:
 			p1 = per1;
@@ -62,6 +57,8 @@ public class ClickBait {
 
 		System.out.println(p1);
 
+		//picks second person
+		int pe2 = rand.nextInt(9);
 		switch (pe2) {
 		case 0:
 			p2 = per1;
@@ -93,6 +90,16 @@ public class ClickBait {
 		}
 		System.out.println(p2);
 
+		//actions
+		String act1 = " wants to sue ";
+		String act2 = " is going to talk to ";
+		String act3 = " is mad at ";
+		String act4 = " is angry at ";
+		String act5 = " wants to hire ";
+		String act6 = " wants to kill ";
+
+		//picks action
+		int act = rand.nextInt(6);
 		switch (act) {
 		case 0:
 			action = act1;
@@ -109,10 +116,30 @@ public class ClickBait {
 		case 4:
 			action = act5;
 			break;
+		case 5:
+			action = act6;
+			break;
 		}
 
 		System.out.println(action);
-		System.out.println(p1 + action + p2 + "!");
+
+		//picks type of news
+		int type = rand.nextInt(3);
+		switch (type) {
+		case 0:
+			bnews = "Breaking News: ";
+			break;
+		case 1:
+			bnews = "Breaking: ";
+			break;
+		case 2:
+			bnews = "Urgent Bulletin: ";
+		}
+
+		System.out.println(bnews);
+
+		//prints final clickbait title
+		System.out.println(bnews + p1 + action + p2 + "!");
 	}
 
 }
