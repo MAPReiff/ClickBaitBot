@@ -23,7 +23,6 @@ public class ClickBait {
 		String per8 = "Larry Page";
 		String per9 = "Edward Snowden";
 
-		// picks first person
 		int pe1 = rand.nextInt(9);
 		int pe2 = rand.nextInt(8);
 		switch (pe1) {
@@ -55,6 +54,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 1:
 			p1 = per2;
 			switch (pe2) {
@@ -83,6 +83,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 2:
 			p1 = per3;
 			switch (pe2) {
@@ -111,6 +112,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 3:
 			p1 = per4;
 			switch (pe2) {
@@ -139,6 +141,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 4:
 			p1 = per5;
 			switch (pe2) {
@@ -167,6 +170,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 5:
 			p1 = per6;
 			switch (pe2) {
@@ -195,6 +199,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 6:
 			p1 = per7;
 			switch (pe2) {
@@ -223,6 +228,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 7:
 			p1 = per8;
 			switch (pe2) {
@@ -251,6 +257,7 @@ public class ClickBait {
 				p2 = per9;
 				break;
 			}
+			break;
 		case 8:
 			p1 = per9;
 			switch (pe2) {
@@ -279,6 +286,7 @@ public class ClickBait {
 				p2 = per8;
 				break;
 			}
+			break;
 		}
 
 		System.out.println(p1);
