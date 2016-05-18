@@ -5,14 +5,14 @@ public class ClickBait {
 
 	public static void main(String args[]) {
 
-		//declaring main variables
+		// declaring main variables
 		String p1 = null;
 		String p2 = null;
 		String action = null;
 		String bnews = null;
 		Random rand = new Random();
 
-		//People
+		// People
 		String per1 = "Obama";
 		String per2 = "Donald Trump";
 		String per3 = "Bernie Sanders";
@@ -23,74 +23,269 @@ public class ClickBait {
 		String per8 = "Larry Page";
 		String per9 = "Edward Snowden";
 
-		//picks first person
+		// picks first person
 		int pe1 = rand.nextInt(9);
+		int pe2 = rand.nextInt(8);
 		switch (pe1) {
 		case 0:
 			p1 = per1;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per2;
+				break;
+			case 1:
+				p2 = per3;
+				break;
+			case 2:
+				p2 = per4;
+				break;
+			case 3:
+				p2 = per5;
+				break;
+			case 4:
+				p2 = per6;
+				break;
+			case 5:
+				p2 = per7;
+				break;
+			case 6:
+				p2 = per8;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 1:
 			p1 = per2;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per3;
+				break;
+			case 2:
+				p2 = per4;
+				break;
+			case 3:
+				p2 = per5;
+				break;
+			case 4:
+				p2 = per6;
+				break;
+			case 5:
+				p2 = per7;
+				break;
+			case 6:
+				p2 = per8;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 2:
 			p1 = per3;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per2;
+				break;
+			case 2:
+				p2 = per4;
+				break;
+			case 3:
+				p2 = per5;
+				break;
+			case 4:
+				p2 = per6;
+				break;
+			case 5:
+				p2 = per7;
+				break;
+			case 6:
+				p2 = per8;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 3:
 			p1 = per4;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per2;
+				break;
+			case 2:
+				p2 = per3;
+				break;
+			case 3:
+				p2 = per5;
+				break;
+			case 4:
+				p2 = per6;
+				break;
+			case 5:
+				p2 = per7;
+				break;
+			case 6:
+				p2 = per8;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 4:
 			p1 = per5;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per2;
+				break;
+			case 2:
+				p2 = per3;
+				break;
+			case 3:
+				p2 = per4;
+				break;
+			case 4:
+				p2 = per6;
+				break;
+			case 5:
+				p2 = per7;
+				break;
+			case 6:
+				p2 = per8;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 5:
 			p1 = per6;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per2;
+				break;
+			case 2:
+				p2 = per3;
+				break;
+			case 3:
+				p2 = per4;
+				break;
+			case 4:
+				p2 = per5;
+				break;
+			case 5:
+				p2 = per7;
+				break;
+			case 6:
+				p2 = per8;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 6:
 			p1 = per7;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per2;
+				break;
+			case 2:
+				p2 = per3;
+				break;
+			case 3:
+				p2 = per4;
+				break;
+			case 4:
+				p2 = per5;
+				break;
+			case 5:
+				p2 = per6;
+				break;
+			case 6:
+				p2 = per8;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 7:
 			p1 = per8;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per2;
+				break;
+			case 2:
+				p2 = per3;
+				break;
+			case 3:
+				p2 = per4;
+				break;
+			case 4:
+				p2 = per5;
+				break;
+			case 5:
+				p2 = per6;
+				break;
+			case 6:
+				p2 = per7;
+				break;
+			case 7:
+				p2 = per9;
+				break;
+			}
 		case 8:
 			p1 = per9;
-			break;
+			switch (pe2) {
+			case 0:
+				p2 = per1;
+				break;
+			case 1:
+				p2 = per2;
+				break;
+			case 2:
+				p2 = per3;
+				break;
+			case 3:
+				p2 = per4;
+				break;
+			case 4:
+				p2 = per5;
+				break;
+			case 5:
+				p2 = per6;
+				break;
+			case 6:
+				p2 = per7;
+				break;
+			case 7:
+				p2 = per8;
+				break;
+			}
 		}
 
 		System.out.println(p1);
 
-		//picks second person
-		int pe2 = rand.nextInt(9);
-		switch (pe2) {
-		case 0:
-			p2 = per1;
-			break;
-		case 1:
-			p2 = per2;
-			break;
-		case 2:
-			p2 = per3;
-			break;
-		case 3:
-			p2 = per4;
-			break;
-		case 4:
-			p2 = per5;
-			break;
-		case 5:
-			p2 = per6;
-			break;
-		case 6:
-			p2 = per7;
-			break;
-		case 7:
-			p2 = per8;
-			break;
-		case 8:
-			p2 = per9;
-			break;
-		}
 		System.out.println(p2);
 
-		//actions
+		// actions
 		String act1 = " wants to sue ";
 		String act2 = " is going to talk to ";
 		String act3 = " is mad at ";
@@ -98,7 +293,7 @@ public class ClickBait {
 		String act5 = " wants to hire ";
 		String act6 = " wants to kill ";
 
-		//picks action
+		// picks action
 		int act = rand.nextInt(6);
 		switch (act) {
 		case 0:
@@ -123,7 +318,7 @@ public class ClickBait {
 
 		System.out.println(action);
 
-		//picks type of news
+		// picks type of news
 		int type = rand.nextInt(3);
 		switch (type) {
 		case 0:
@@ -138,7 +333,7 @@ public class ClickBait {
 
 		System.out.println(bnews);
 
-		//prints final clickbait title
+		// prints final clickbait title
 		System.out.println(bnews + p1 + action + p2 + "!");
 	}
 
