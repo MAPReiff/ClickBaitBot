@@ -1,0 +1,6 @@
+{
+  "name": "Clickbaitbot",
+  "tagline": "A Bot that creates clickbait news!",
+  "body": "# Clickbait Bot\r\nWelcome to the Clickbait Bot made by Mitchell Reiff.\r\nThe Bait Bot is a program that:\r\n  - Generates fake headlines\r\n  - Posts the headlines to twitter\r\n  - Made in Java\r\n  - Used [TwitterJ4]\r\n  - [Follow the bot on twitter and use #TheBaitBot!]\r\n\r\n### Todos\r\n - Automate the bot\r\n - Add more people\r\n - Add more types of news\r\n - Add more actions.\r\n\r\nLicense\r\n----\r\n\r\nMIT\r\n\r\n\r\n[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)\r\n\r\n   [TwitterJ4]: <http://twitter4j.org/>\r\n   [Follow the bot on twitter and use #TheBaitBot!]: <https://twitter.com/theclickbaitbot>\r\n\r\n  ",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
