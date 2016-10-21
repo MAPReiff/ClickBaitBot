@@ -1,18 +1,19 @@
+package com.mapreiff.thebaitbot;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Random;
-import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 
-public class ClickBait {
+public class ClickBait extends TimerTask {
 
 	static String consumerKeyStr = "";
 	static String consumerSecretStr = "";
@@ -21,8 +22,13 @@ public class ClickBait {
 
 	public static void main(String args[]) throws FileNotFoundException {
 
-		// Declaring main variables
-		Random rand = new Random();
+		Timer timer = new Timer();
+		timer.schedule(new ClickBait(), 0, 600000);
+	}
+	
+	@Override
+	public void run() {
+		// System.out.println("Test");
 		Calendar cal = Calendar.getInstance();
 
 		ArrayList<String> people = new ArrayList<String>();
@@ -42,6 +48,7 @@ public class ClickBait {
 		people.add("Morgan Freeman");
 		people.add("Will Smith");
 		people.add("George Clooney");
+		people.add("Keem Star");
 		// people.add("");
 
 		String p1_random = people.get(new Random().nextInt(people.size()));
@@ -65,8 +72,9 @@ public class ClickBait {
 		actions.add(" wants to hire ");
 		actions.add(" wants to kill ");
 		actions.add(" wants to marry ");
-		//actions.add("  ");
-
+		actions.add(" was killed by ");
+		// actions.add(" ");
+		// actions.add(" ");
 
 		String action = actions.get(new Random().nextInt(actions.size()));
 		System.out.println(action);
@@ -76,9 +84,8 @@ public class ClickBait {
 		newstype.add("Breaking News: ");
 		newstype.add("Breaking: ");
 		newstype.add("Urgent Bulletin: ");
-		//newstype.add("SOMETHING: ");
-		
-		
+		// newstype.add("SOMETHING: ");
+
 		String bnews = newstype.get(new Random().nextInt(newstype.size()));
 		System.out.println(bnews);
 
@@ -90,23 +97,30 @@ public class ClickBait {
 			out.println("Enjoy your clickbait!");
 			out.println(bnews + p1_random + action + p2_random + "!");
 
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
-		
-		  try { Twitter twitter = new TwitterFactory().getInstance();
-		  
-		  twitter.setOAuthConsumer(consumerKeyStr, consumerSecretStr);
-		  AccessToken accessToken = new AccessToken(accessTokenStr,
-		  accessTokenSecretStr);
-		  
-		  twitter.setOAuthAccessToken(accessToken);
-		  
-		  // Tweet Text here! 
-		  twitter.updateStatus(bnews + p1_random + action + p2_random + "! #TheBaitBot");
-		  
-		  System.out.println("Successfully sent a tweet!"); } catch
-		  (TwitterException te) { te.printStackTrace(); }
-		 
+
+		try {
+			Twitter twitter = new TwitterFactory().getInstance();
+
+			twitter.setOAuthConsumer(consumerKeyStr, consumerSecretStr);
+			AccessToken accessToken = new AccessToken(accessTokenStr, accessTokenSecretStr);
+
+			twitter.setOAuthAccessToken(accessToken);
+
+			// Tweet Text here!
+			twitter.updateStatus(bnews + p1_random + action + p2_random + "! #TheBaitBot");
+
+			System.out.println("Successfully sent a tweet!");
+			System.out.println("Tweet said " + bnews + p1_random + action + p2_random + "! #TheBaitBot");
+		} catch (TwitterException te) {
+			te.printStackTrace();
+		}
+	}
+
+
 
 	}
 
-}
+
