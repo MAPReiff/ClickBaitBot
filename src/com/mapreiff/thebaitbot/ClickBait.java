@@ -15,10 +15,10 @@ import twitter4j.auth.AccessToken;
 
 public class ClickBait extends TimerTask {
 
-	static String consumerKeyStr = "";
-	static String consumerSecretStr = "";
-	static String accessTokenStr = "";
-	static String accessTokenSecretStr = "";
+	static String consumerKeyStr = "X";
+	static String consumerSecretStr = "X";
+	static String accessTokenStr = "X";
+	static String accessTokenSecretStr = "X";
 
 	public static void main(String args[]) throws FileNotFoundException {
 
@@ -49,7 +49,27 @@ public class ClickBait extends TimerTask {
 		people.add("Will Smith");
 		people.add("George Clooney");
 		people.add("Keem Star");
-		// people.add("");
+		people.add("Oprah");
+		people.add("Kim Kardashian");
+		people.add("Beyoncé");
+		people.add("Angelina Jolie");
+		people.add("Brad Pitt");
+		people.add("Steven Spielberg");
+		people.add("Tom Cruise");
+		people.add("Selena Gomez");
+		people.add("Justin Bieber");
+		people.add("Michael Jordan");
+		people.add("Jim Carrey");
+		people.add("Dre");
+		people.add("Ariana Grande");
+		people.add("Taylor Swift");
+		people.add("Snoop Dog");
+		people.add("Jay Z");
+		people.add("Tiger Woods");
+		people.add("Whoopi Goldberg");
+		people.add("Al Gore");
+		people.add("Ellen");
+		//people.add("");
 
 		String p1_random = people.get(new Random().nextInt(people.size()));
 		String p2_random = people.get(new Random().nextInt(people.size()));
@@ -73,6 +93,7 @@ public class ClickBait extends TimerTask {
 		actions.add(" wants to kill ");
 		actions.add(" wants to marry ");
 		actions.add(" was killed by ");
+		actions.add(" was raped by ");
 		// actions.add(" ");
 		// actions.add(" ");
 
