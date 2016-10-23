@@ -1,9 +1,5 @@
-# ClickBaitBot
-Welcome to my clickbait bot project! This bot is going to generate clickbait headlines by selecting two random people,
-and an action.  This project is for fun, and feel free to contribute! 
-
 # Clickbait Bot
-Welcome to the Clickbait Bot made by Mitchell Reiff.
+Welcome to the Clickbait Bot made by Mitchell Reiff. This project is for fun, and feel free to contribute! 
 The Bait Bot is a program that:
   - Generates fake headlines
   - Posts the headlines to twitter
