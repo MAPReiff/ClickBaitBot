@@ -1,3 +1,7 @@
+//Version 1.2
+//Made by Mitchell Reiff and intended for use with @TheClickbaitBot on twitter.
+//http://mreiff.space/projects/clickbaitbot for more details.
+
 package com.mapreiff.thebaitbot;
 
 import java.io.FileNotFoundException;
@@ -23,6 +27,7 @@ public class ClickBait extends TimerTask {
 
 	public static void main(String args[]) throws FileNotFoundException {
 
+		
 		Timer timer = new Timer();
 		timer.schedule(new ClickBait(), 0, 600000);
 	}
