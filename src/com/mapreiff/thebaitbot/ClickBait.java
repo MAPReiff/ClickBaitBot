@@ -13,6 +13,7 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 
+
 public class ClickBait extends TimerTask {
 
 	static String consumerKeyStr = "X";
@@ -113,14 +114,14 @@ public class ClickBait extends TimerTask {
 		// prints final clickbait title
 		System.out.println(bnews + p1_random + action + p2_random + "!");
 
-		try (PrintWriter out = new PrintWriter("Clickbait " + cal.getTimeInMillis() + ".txt")) {
+/*		try (PrintWriter out = new PrintWriter("Clickbait " + cal.getTimeInMillis() + ".txt")) {
 
 			out.println("Enjoy your clickbait!");
 			out.println(bnews + p1_random + action + p2_random + "!");
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
+		}*/
 
 		try {
 			Twitter twitter = new TwitterFactory().getInstance();
