@@ -1,6 +1,7 @@
-//Version 1.2
-//Made by Mitchell Reiff and intended for use with @TheClickbaitBot on twitter.
-//http://mreiff.space/projects/clickbaitbot for more details.
+//		Version 1.3
+//		11/4/16
+//		Made by Mitchell Reiff and intended for use with @TheClickbaitBot on twitter.
+//		http://mreiff.space/projects/clickbaitbot for more details.
 
 package com.mapreiff.thebaitbot;
 
@@ -49,7 +50,8 @@ public class ClickBait extends TimerTask {
 			kind.add("Strongest ");
 			kind.add("Weakest ");
 			kind.add("");
-			
+			kind.add("Documentary: ");
+
 			ArrayList<String> number = new ArrayList<String>();
 			number.add("Five");
 			number.add("Six");
@@ -57,6 +59,8 @@ public class ClickBait extends TimerTask {
 			number.add("Eight");
 			number.add("Nine");
 			number.add("Ten");
+			number.add("Fifteen");
+			
 
 			ArrayList<String> thing = new ArrayList<String>();
 			thing.add(" Cats");
@@ -65,6 +69,9 @@ public class ClickBait extends TimerTask {
 			thing.add(" Foods");
 			thing.add(" Children");
 			thing.add(" Adults");
+			thing.add(" Videos");
+			thing.add(" Cars");
+			thing.add(" Lies");
 
 			ArrayList<String> ofWhat = new ArrayList<String>();
 			ofWhat.add(" in the world");
@@ -73,14 +80,22 @@ public class ClickBait extends TimerTask {
 			ofWhat.add(" in America");
 			ofWhat.add(" of the past year");
 			ofWhat.add(" that ever existed");
-			
+			ofWhat.add(" in Mexico");
+			ofWhat.add(" in Europe");
+			ofWhat.add(" in Asia");
+			ofWhat.add(" in Canada");
+			ofWhat.add(" on the internet");
+			ofWhat.add(" in the word");
+			ofWhat.add(" of 2016");
+			ofWhat.add(" of 2015");
+
 			String what = ofWhat.get(new Random().nextInt(ofWhat.size()));
 			String subject = thing.get(new Random().nextInt(thing.size()));
 			String num = number.get(new Random().nextInt(number.size()));
 			String starter = kind.get(new Random().nextInt(kind.size()));
-			
+
 			System.out.println(starter + num + subject + what);
-			
+
 			try {
 				Twitter twitter = new TwitterFactory().getInstance();
 
@@ -141,6 +156,8 @@ public class ClickBait extends TimerTask {
 			people.add("Jill Stein");
 			people.add("Gary Johnson");
 			people.add("Malik Obama");
+			people.add("Mike Pence");
+			people.add("Tim Kaine");
 			// people.add("");
 
 			String p1_random = people.get(new Random().nextInt(people.size()));
@@ -219,7 +236,7 @@ public class ClickBait extends TimerTask {
 			} catch (TwitterException te) {
 				te.printStackTrace();
 			}
-			
+
 		}
 	}
 
