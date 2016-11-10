@@ -1,5 +1,5 @@
-//		Version 1.3
-//		11/4/16
+//		Version 1.3.1
+//		11/10/16
 //		Made by Mitchell Reiff and intended for use with @TheClickbaitBot on twitter.
 //		http://mreiff.space/projects/clickbaitbot for more details.
 
@@ -51,6 +51,7 @@ public class ClickBait extends TimerTask {
 			kind.add("Weakest ");
 			kind.add("");
 			kind.add("Documentary: ");
+			kind.add("The Top ");
 
 			ArrayList<String> number = new ArrayList<String>();
 			number.add("Five");
@@ -60,6 +61,8 @@ public class ClickBait extends TimerTask {
 			number.add("Nine");
 			number.add("Ten");
 			number.add("Fifteen");
+			number.add("100");
+			number.add("Fifty");
 			
 
 			ArrayList<String> thing = new ArrayList<String>();
@@ -72,6 +75,15 @@ public class ClickBait extends TimerTask {
 			thing.add(" Videos");
 			thing.add(" Cars");
 			thing.add(" Lies");
+			thing.add(" Murders");
+			thing.add(" Convicts");
+			thing.add(" Criminals");
+			thing.add(" Smart People");
+			thing.add(" Really Stupid People");
+			thing.add(" World Leaders");
+			thing.add(" Billionares");
+			thing.add(" Millionares");
+			
 
 			ArrayList<String> ofWhat = new ArrayList<String>();
 			ofWhat.add(" in the world");
@@ -88,6 +100,14 @@ public class ClickBait extends TimerTask {
 			ofWhat.add(" in the word");
 			ofWhat.add(" of 2016");
 			ofWhat.add(" of 2015");
+			ofWhat.add(" in Russia");
+			ofWhat.add(" in China");
+			ofWhat.add(" in Japan");
+			ofWhat.add(" in England");
+			ofWhat.add(" in Germany");
+			ofWhat.add(" in Africa");
+			ofWhat.add(" in the Middle East");
+			ofWhat.add(" in Australia");
 
 			String what = ofWhat.get(new Random().nextInt(ofWhat.size()));
 			String subject = thing.get(new Random().nextInt(thing.size()));
@@ -190,6 +210,9 @@ public class ClickBait extends TimerTask {
 			actions.add(" was raped by ");
 			actions.add(" wants to hack ");
 			actions.add(" was hacked by ");
+			actions.add(" was attacked by ");
+			actions.add(" wants to murder ");
+			actions.add(" is amazed by ");
 			// actions.add(" ");
 			// actions.add(" ");
 
