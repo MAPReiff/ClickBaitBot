@@ -1,4 +1,4 @@
-//		Version 1.4
+//		Version 1.4.1
 //		11/10/16
 //		Made by Mitchell Reiff and intended for use with @TheClickbaitBot on twitter.
 //		http://mreiff.space/projects/clickbaitbot for more details.
@@ -54,35 +54,35 @@ public class ClickBait extends TimerTask {
 			kind.add("The Top ");
 
 			ArrayList<String> number = new ArrayList<String>();
-			number.add("Five");
-			number.add("Six");
-			number.add("Seven");
-			number.add("Eight");
-			number.add("Nine");
-			number.add("Ten");
-			number.add("Fifteen");
+			number.add("five");
+			number.add("six");
+			number.add("seven");
+			number.add("eight");
+			number.add("nine");
+			number.add("ten");
+			number.add("fifteen");
 			number.add("100");
-			number.add("Fifty");
+			number.add("fifty");
 			
 
 			ArrayList<String> thing = new ArrayList<String>();
-			thing.add(" Cats");
-			thing.add(" Dogs");
-			thing.add(" Countries");
-			thing.add(" Foods");
-			thing.add(" Children");
-			thing.add(" Adults");
-			thing.add(" Videos");
-			thing.add(" Cars");
-			thing.add(" Lies");
-			thing.add(" Murders");
-			thing.add(" Convicts");
-			thing.add(" Criminals");
-			thing.add(" Smart People");
-			thing.add(" Really Stupid People");
-			thing.add(" World Leaders");
-			thing.add(" Billionares");
-			thing.add(" Millionares");
+			thing.add(" cats");
+			thing.add(" dogs");
+			thing.add(" countries");
+			thing.add(" foods");
+			thing.add(" children");
+			thing.add(" adults");
+			thing.add(" videos");
+			thing.add(" cars");
+			thing.add(" lies");
+			thing.add(" murders");
+			thing.add(" convicts");
+			thing.add(" criminals");
+			thing.add(" smart People");
+			thing.add(" really Stupid People");
+			thing.add(" world Leaders");
+			thing.add(" billionares");
+			thing.add(" millionares");
 			
 
 			ArrayList<String> ofWhat = new ArrayList<String>();
@@ -228,6 +228,7 @@ public class ClickBait extends TimerTask {
 			actions.add(" was attacked by ");
 			actions.add(" wants to murder ");
 			actions.add(" is amazed by ");
+			actions.add(" is plotting to kill");
 			// actions.add(" ");
 			// actions.add(" ");
 
@@ -240,6 +241,7 @@ public class ClickBait extends TimerTask {
 			newstype.add("Breaking: ");
 			newstype.add("Urgent Bulletin: ");
 			newstype.add("Drama: ");
+			newstype.add("News: ");
 			// newstype.add("SOMETHING: ");
 
 			String bnews = newstype.get(new Random().nextInt(newstype.size()));
