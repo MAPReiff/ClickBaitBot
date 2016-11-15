@@ -1,4 +1,4 @@
-//		Version 1.3.1
+//		Version 1.4
 //		11/10/16
 //		Made by Mitchell Reiff and intended for use with @TheClickbaitBot on twitter.
 //		http://mreiff.space/projects/clickbaitbot for more details.
@@ -136,12 +136,12 @@ public class ClickBait extends TimerTask {
 		} else {
 
 			ArrayList<String> people = new ArrayList<String>();
-			people.add("Obama");
-			people.add("Donald Trump");
-			people.add("Bernie Sanders");
-			people.add("Hillary Clintion");
-			people.add("Bill Clintion");
-			people.add("Modanna");
+			people.add("#Obama");
+			people.add("Donald #Trump");
+			people.add("Bernie #Sanders");
+			people.add("Hillary #Clintion");
+			people.add("Bill #Clintion");
+			people.add("#Modanna");
 			people.add("Tim Cook");
 			people.add("Sergey Brin");
 			people.add("Larry Page");
@@ -153,9 +153,9 @@ public class ClickBait extends TimerTask {
 			people.add("Will Smith");
 			people.add("George Clooney");
 			people.add("Keem Star");
-			people.add("Oprah");
-			people.add("Kim Kardashian");
-			people.add("Beyoncé");
+			people.add("#Oprah");
+			people.add("Kim #Kardashian");
+			people.add("#Beyoncé");
 			people.add("Angelina Jolie");
 			people.add("Brad Pitt");
 			people.add("Steven Spielberg");
@@ -164,7 +164,7 @@ public class ClickBait extends TimerTask {
 			people.add("Justin Bieber");
 			people.add("Michael Jordan");
 			people.add("Jim Carrey");
-			people.add("Dre");
+			people.add("#Dre");
 			people.add("Ariana Grande");
 			people.add("Taylor Swift");
 			people.add("Snoop Dog");
@@ -172,12 +172,27 @@ public class ClickBait extends TimerTask {
 			people.add("Tiger Woods");
 			people.add("Whoopi Goldberg");
 			people.add("Al Gore");
-			people.add("Ellen");
-			people.add("Jill Stein");
-			people.add("Gary Johnson");
-			people.add("Malik Obama");
-			people.add("Mike Pence");
-			people.add("Tim Kaine");
+			people.add("#Ellen");
+			people.add("Jill #Stein");
+			people.add("Gary #Johnson");
+			people.add("Malik #Obama");
+			people.add("Mike #Pence");
+			people.add("Tim #Kaine");
+			people.add("Donald #Trump Jr.");
+			people.add("Eric #Trump");
+			people.add("Melania #Trump");
+			people.add("Barron #Trump");
+			people.add("Ivanka #Trump");
+			people.add("Tiffany #Trump");
+			people.add("Michelle #Obama");
+			people.add("Chelea #Clinton");
+			people.add("Julian #Assange");
+			people.add("Anthony Weiner"); //#Weiner sounds strange...
+			people.add("Chris #Christie");
+			people.add("Joe #Biden");
+			people.add("Vladimir #Putin");
+			people.add("Rudy Giuliani");
+			
 			// people.add("");
 
 			String p1_random = people.get(new Random().nextInt(people.size()));
