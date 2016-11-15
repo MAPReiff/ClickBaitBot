@@ -1,4 +1,4 @@
-//		Version 1.4.1
+//		Version 1.4.2
 //		11/10/16
 //		Made by Mitchell Reiff and intended for use with @TheClickbaitBot on twitter.
 //		http://mreiff.space/projects/clickbaitbot for more details.
@@ -26,15 +26,13 @@ public class ClickBait extends TimerTask {
 	static String accessTokenSecretStr = "X";
 
 	public static void main(String args[]) throws FileNotFoundException {
-
+		// Run automatically
 		Timer timer = new Timer();
-		timer.schedule(new ClickBait(), 0, 600000);
+		timer.schedule(new ClickBait(), 0, 600000); // 600000ms is 10min
 	}
 
 	@Override
 	public void run() {
-		// System.out.println("Test");
-		// Calendar cal = Calendar.getInstance();
 
 		Random rand = new Random();
 
@@ -42,6 +40,7 @@ public class ClickBait extends TimerTask {
 
 		if (type == 2 /* top X list */ ) {
 
+			// opening to list
 			ArrayList<String> kind = new ArrayList<String>();
 			kind.add("Top ");
 			kind.add("The best ");
@@ -53,6 +52,7 @@ public class ClickBait extends TimerTask {
 			kind.add("Documentary: ");
 			kind.add("The Top ");
 
+			// number of the list
 			ArrayList<String> number = new ArrayList<String>();
 			number.add("five");
 			number.add("six");
@@ -63,8 +63,8 @@ public class ClickBait extends TimerTask {
 			number.add("fifteen");
 			number.add("100");
 			number.add("fifty");
-			
 
+			// list of what
 			ArrayList<String> thing = new ArrayList<String>();
 			thing.add(" cats");
 			thing.add(" dogs");
@@ -83,8 +83,8 @@ public class ClickBait extends TimerTask {
 			thing.add(" world Leaders");
 			thing.add(" billionares");
 			thing.add(" millionares");
-			
 
+			// bait part of the title
 			ArrayList<String> ofWhat = new ArrayList<String>();
 			ofWhat.add(" in the world");
 			ofWhat.add(" of all time");
@@ -109,6 +109,7 @@ public class ClickBait extends TimerTask {
 			ofWhat.add(" in the Middle East");
 			ofWhat.add(" in Australia");
 
+			// selects a random one from each list
 			String what = ofWhat.get(new Random().nextInt(ofWhat.size()));
 			String subject = thing.get(new Random().nextInt(thing.size()));
 			String num = number.get(new Random().nextInt(number.size()));
@@ -119,6 +120,7 @@ public class ClickBait extends TimerTask {
 			try {
 				Twitter twitter = new TwitterFactory().getInstance();
 
+				// Authenticates with Twitter servers
 				twitter.setOAuthConsumer(consumerKeyStr, consumerSecretStr);
 				AccessToken accessToken = new AccessToken(accessTokenStr, accessTokenSecretStr);
 
@@ -134,7 +136,7 @@ public class ClickBait extends TimerTask {
 			}
 
 		} else {
-
+			// picks 2 people
 			ArrayList<String> people = new ArrayList<String>();
 			people.add("#Obama");
 			people.add("Donald #Trump");
@@ -187,14 +189,14 @@ public class ClickBait extends TimerTask {
 			people.add("Michelle #Obama");
 			people.add("Chelea #Clinton");
 			people.add("Julian #Assange");
-			people.add("Anthony Weiner"); //#Weiner sounds strange...
+			people.add("Anthony Weiner"); // #Weiner sounds strange...
 			people.add("Chris #Christie");
 			people.add("Joe #Biden");
 			people.add("Vladimir #Putin");
 			people.add("Rudy Giuliani");
-			
 			// people.add("");
 
+			// checks if someone was matched with themselves
 			String p1_random = people.get(new Random().nextInt(people.size()));
 			String p2_random = people.get(new Random().nextInt(people.size()));
 			if (p1_random == p2_random) {
@@ -213,6 +215,7 @@ public class ClickBait extends TimerTask {
 			System.out.println(p1_random);
 			System.out.println(p2_random);
 
+			// picks action
 			ArrayList<String> actions = new ArrayList<String>();
 			actions.add(" wants to sue ");
 			actions.add(" is going to fight with ");
@@ -250,19 +253,10 @@ public class ClickBait extends TimerTask {
 			// prints final clickbait title
 			System.out.println(bnews + p1_random + action + p2_random + "!");
 
-			/*
-			 * try (PrintWriter out = new PrintWriter("Clickbait " +
-			 * cal.getTimeInMillis() + ".txt")) {
-			 * 
-			 * out.println("Enjoy your clickbait!"); out.println(bnews +
-			 * p1_random + action + p2_random + "!");
-			 * 
-			 * } catch (FileNotFoundException e) { e.printStackTrace(); }
-			 */
-
 			try {
 				Twitter twitter = new TwitterFactory().getInstance();
 
+				// Authenticates with Twitter servers
 				twitter.setOAuthConsumer(consumerKeyStr, consumerSecretStr);
 				AccessToken accessToken = new AccessToken(accessTokenStr, accessTokenSecretStr);
 
